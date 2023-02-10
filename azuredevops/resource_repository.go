@@ -48,6 +48,7 @@ type repository struct {
 
 	pullRequests *PullRequestClient
 	trees        *TreeClient
+	branches     *BranchClient
 }
 
 func (r *repository) TeamAccess() gitprovider.TeamAccessClient {
